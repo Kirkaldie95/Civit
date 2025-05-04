@@ -1,361 +1,200 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Civit Consultancy</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Civit Consultancy</title>
+  <style>
+    :root {
+      --primary-color: #0077b6;
+      --accent-color: #00b4d8;
+      --bg-color: #f1faff;
+      --text-color: #333;
+      --white: #ffffff;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A Civil Engineering practice providing services across a wide range of services.</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Drainage</a></li>
-								<li><a href="#work">Infrastructure</a></li>
-								<li><a href="#about">Portfolio</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+    nav {
+      background: var(--primary-color);
+      padding: 15px;
+      text-align: center;
+    }
 
-				<!-- Main -->
-					<div id="main">
+    nav a {
+      color: var(--white);
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-						<!-- Drainage -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-							</article>
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
+    .intro {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: var(--white);
+    }
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+    .intro h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+    .intro p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2em;
+    }
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+    .services-summary {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background: var(--white);
+    }
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+    .service-card {
+      background: var(--bg-color);
+      border-radius: 10px;
+      padding: 25px;
+      width: 300px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+    .service-card h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+    }
 
-								<section>
-									<h3 class="major">Lists</h3>
+    .service-card p {
+      font-size: 0.95em;
+    }
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    .service-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: var(--white);
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+    h2 {
+      color: var(--primary-color);
+    }
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+    ul {
+      padding-left: 20px;
+    }
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+    li {
+      margin-bottom: 10px;
+    }
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+    footer {
+      text-align: center;
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#drainage">Drainage</a>
+    <a href="#highways">Highways</a>
+    <a href="#infrastructure">Infrastructure</a>
+    <a href="#portfolio">Portfolio</a>
+  </nav>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+  <div class="intro" id="home">
+    <h1>Civit Consultancy</h1>
+    <p>Civil consultancy services in drainage, highways and infrastructure design for planning and construction.</p>
+  </div>
 
-							</article>
+  <div class="services-summary">
+    <div class="service-card">
+      <h3>Drainage Services</h3>
+      <p>Flood Risk Assessments, SuDS design, network layout, and sewer agreements to meet planning and construction needs.</p>
+      <a href="#drainage">Learn More →</a>
+    </div>
+    <div class="service-card">
+      <h3>Highway Services</h3>
+      <p>Access design, transport assessments, Section 278/38 works, and safety audits to support development approvals.</p>
+      <a href="#highways">Learn More →</a>
+    </div>
+    <div class="service-card">
+      <h3>Infrastructure Design</h3>
+      <p>Utilities coordination, earthworks, estate roads and detailed civil construction drawings.</p>
+      <a href="#infrastructure">Learn More →</a>
+    </div>
+  </div>
 
-					</div>
+  <section id="drainage">
+    <h2>Drainage Services</h2>
+    <p>At Southern Civil Engineering Consultancy, we provide comprehensive drainage consultancy services that support developments from feasibility through to completion. Our solutions are aligned with planning policies, industry standards, and sustainable development goals.</p>
+    <ul>
+      <li><strong>Flood Risk Assessments (FRA):</strong> Detailed assessments to support planning applications, identifying flood risks and recommending mitigation strategies in line with Environment Agency requirements.</li>
+      <li><strong>Sustainable Drainage Systems (SuDS) Strategies:</strong> Concept and detailed design of SuDS, integrating permeable paving, swales, attenuation basins, and green roofs to manage surface water sustainably.</li>
+      <li><strong>Drainage Design (Surface & Foul):</strong> Full network design for new and existing developments, including pipe sizing, manhole schedules, and long sections using industry-standard software (e.g., MicroDrainage, InfoDrainage).</li>
+      <li><strong>Pre-planning and Feasibility Reports:</strong> Early-stage advice to inform development layout and viability.</li>
+      <li><strong>Adoption Drawings & Sewer Agreements (Section 104, 106 & 185):</strong> Preparation of technical drawings and liaison with water authorities to ensure seamless adoption and connections.</li>
+      <li><strong>Construction Support & As-Built Drawings:</strong> On-site support, drainage reviews during construction, and production of final as-built documentation.</li>
+    </ul>
+  </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+  <section id="highways">
+    <h2>Highway Services</h2>
+    <p>Our highways team delivers safe, compliant, and efficient access solutions that support the smooth approval of planning applications and successful site delivery.</p>
+    <ul>
+      <li><strong>Access Design & Junction Layouts:</strong> Detailed access design for vehicles and pedestrians, including visibility splays and swept path analysis.</li>
+      <li><strong>Transport Statements & Assessments:</strong> Reports supporting planning applications, assessing traffic impacts and demonstrating accessibility.</li>
+      <li><strong>Road Safety Audits:</strong> Independent audits to identify potential safety issues and improve highway design.</li>
+      <li><strong>Section 278 & 38 Agreements:</strong> Design and coordination of highway works for adoption or improvements, including liaison with Local Highway Authorities.</li>
+      <li><strong>Construction Traffic Management Plans:</strong> Planning safe and efficient site access and movement during the construction phase.</li>
+    </ul>
+  </section>
 
-			</div>
+  <section id="infrastructure">
+    <h2>Infrastructure Services</h2>
+    <p>Our infrastructure services ensure that developments are delivered with robust and cost-effective servicing strategies that meet both regulatory and practical requirements.</p>
+    <ul>
+      <li><strong>Utilities Coordination & Diversions:</strong> Review of existing services, coordination of new utility layouts, and management of diversion requirements.</li>
+      <li><strong>Earthworks & Site Leveling Strategy:</strong> Cut and fill analysis to inform cost-effective and sustainable site preparation.</li>
+      <li><strong>Estate Road & Plot Drainage Layouts:</strong> Integrated design of access roads, parking, and drainage for residential and commercial developments.</li>
+      <li><strong>Construction Detailing & Specification:</strong> Comprehensive technical detailing for tender and construction stages.</li>
+    </ul>
+  </section>
 
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+  <section id="portfolio">
+    <h2>Our Work</h2>
+    <p>We’re proud to have supported a wide range of reside
