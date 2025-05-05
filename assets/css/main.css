@@ -2161,7 +2161,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #ff7424;
 		display: block;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-size: 0.8em;
@@ -2803,7 +2803,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: #ff7424;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2863,7 +2863,7 @@ input, select, textarea {
 		border-radius: 5px;
 		border: 0;
 		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-		color: #ffffff !important;
+		color: #ff7424 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-family: Raleway, Helvetica, sans-serif;
