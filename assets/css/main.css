@@ -91,7 +91,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #ECECE4;
+		background-color: #e8e4e4;
 		background-image: linear-gradient(to top, rgba(140, 146, 127, 0.9), rgba(182, 186, 169, 0.9)), url("../../images/bg.png");
 		background-size: auto,
  cover;
