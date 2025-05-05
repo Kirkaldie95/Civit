@@ -3573,7 +3573,7 @@ background-size: auto, cover;
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #969ca7;
-			background-image: linear-gradient(to top, #808000, #808000d2), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, #e8e4e4, #e8e4e4d2), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
