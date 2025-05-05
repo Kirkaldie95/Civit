@@ -30,15 +30,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-background-color: #ECECE4;
-background-image: linear-gradient(
-    to right,
-    #e8e4e4,
-    #ecece4
-), url("../../images/bg.png");
-background-size: auto, cover;
-background-attachment: fixed, fixed;
-background-position: center, center;
+background-color: #E8E4E4;
+background-image: none;
+background-size: auto;
+background-attachment: fixed;
+background-position: center;
 color: #2f2f2f;
 }
 
