@@ -2312,7 +2312,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #fdebd0;
+			border-color: #fdfcfc;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2737,7 +2737,7 @@ input, select, textarea {
 				}
 
 				ul.pagination li > .page.active {
-					background-color: #fdebd0;
+					background-color: #fdfcfc;
 				}
 
 			ul.pagination li:first-child {
@@ -2905,7 +2905,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #fdebd0;
+			background-color: #fdfcfc;
 			box-shadow: none;
 		}
 
@@ -2922,7 +2922,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #FFEFD5;
+				background-color: #f2f0ee;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -3273,7 +3273,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #fdebd0;
+			background: #fdfcfc;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3329,7 +3329,7 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #FFEFD5;
+						background: #f2f0ee;
 					}
 
 		@media screen and (max-width: 736px) {
@@ -3569,7 +3569,7 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #8C927F;
+			background-color: #505a6c;
 			background-image: linear-gradient(to top, #808000, #808000d2), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
@@ -3617,7 +3617,7 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background-color: #8C927F;
+		background-color: #505a6c;
 		margin: 6.5em 0;
 		position: relative;
 	}
@@ -3627,11 +3627,11 @@ input, select, textarea {
 		}
 
 		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 #8C927F, 0 1px 0 0 #8C927F;
+			box-shadow: inset 0 -1px 0 0 #505a6c, 0 1px 0 0 #505a6c;
 		}
 
 		.wrapper:after {
-			box-shadow: inset 0 -1px 0 0 #8C927F, 0 1px 0 0 #8C927F;
+			box-shadow: inset 0 -1px 0 0 #505a6c, 0 1px 0 0 #505a6c;
 		}
 
 		.wrapper:before, .wrapper:after {
@@ -3759,7 +3759,7 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: #fdebd0;
+			background-color: #fdfcfc;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
@@ -3767,11 +3767,11 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #fdebd0, 0 1px 0 0 #fdebd0;
+				box-shadow: inset 0 -1px 0 0 #fdfcfc, 0 1px 0 0 #fdfcfc;
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #fdebd0, 0 1px 0 0 #fdebd0;
+				box-shadow: inset 0 -1px 0 0 #fdfcfc, 0 1px 0 0 #fdfcfc;
 			}
 
 			.wrapper.spotlight .inner {
@@ -3820,7 +3820,7 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #FFEFD5;
+				background-color: #f2f0ee;
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
@@ -3828,15 +3828,15 @@ input, select, textarea {
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 #FFEFD5, 0 1px 0 0 #FFEFD5;
+					box-shadow: inset 0 -1px 0 0 #f2f0ee, 0 1px 0 0 #f2f0ee;
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 #FFEFD5, 0 1px 0 0 #FFEFD5;
+					box-shadow: inset 0 -1px 0 0 #f2f0ee, 0 1px 0 0 #f2f0ee;
 				}
 
 			.wrapper.spotlight.style3 {
-				background-color: #3f4e85;
+				background-color: #d1cdcd;
 			}
 
 				.wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
@@ -3844,11 +3844,11 @@ input, select, textarea {
 				}
 
 				.wrapper.spotlight.style3:before {
-					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
+					box-shadow: inset 0 -1px 0 0 #d1cdcd, 0 1px 0 0 #d1cdcd;
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 #3f4e85, 0 1px 0 0 #3f4e85;
+					box-shadow: inset 0 -1px 0 0 #d1cdcd, 0 1px 0 0 #d1cdcd;
 				}
 
 			.wrapper.spotlight.style4 {
