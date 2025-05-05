@@ -2222,7 +2222,7 @@ background-size: auto, cover;
 
 		select option {
 			color: #ffffff;
-			background: #6B8E23;
+			background: #e8e4e4;
 		}
 
 		select:focus::-ms-value {
