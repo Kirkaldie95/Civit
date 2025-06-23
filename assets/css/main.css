@@ -194,7 +194,7 @@ background-size: auto, cover;
 			text-decoration: none;
 			border-bottom: 0;
 			display: block;
-			font-family: Raleway, Helvetica, sans-serif;
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 0.8em;
 			font-weight: 700;
 			letter-spacing: 0.1em;
@@ -257,7 +257,7 @@ background-size: auto, cover;
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ff7424;
-		font-family: Raleway, Helvetica, sans-serif;
+		font-family: 'Montserrat', Arial, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
@@ -2172,7 +2172,7 @@ background-size: auto, cover;
 	label {
 		color: #000000;
 		display: block;
-		font-family: Raleway, Helvetica, sans-serif;
+		font-family: 'Montserrat', Arial, sans-serif;
 		font-size: 0.8em;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -2875,7 +2875,7 @@ background-size: auto, cover;
 		color: #ff7424 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: Raleway, Helvetica, sans-serif;
+		font-family: 'Montserrat', Arial, sans-serif;
 		font-size: 0.8em;
 		font-weight: 700;
 		height: 3.75em;
@@ -3109,7 +3109,7 @@ background-size: auto, cover;
 			}
 
 		#header nav {
-			font-family: Raleway, Helvetica, sans-serif;
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 0.8em;
 			font-weight: 700;
 			height: 3em;
@@ -3332,7 +3332,7 @@ background-size: auto, cover;
 					border-radius: 5px;
 					border: 0;
 					display: block;
-					font-family: Raleway, Helvetica, sans-serif;
+					font-family: 'Montserrat', Arial, sans-serif;
 					font-size: 0.8em;
 					font-weight: 200;
 					letter-spacing: 0.1em;
@@ -3458,7 +3458,7 @@ background-size: auto, cover;
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			font-family: Raleway, Helvetica, sans-serif;
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 1em;
 			font-weight: 200;
 			letter-spacing: 0.1em;
@@ -3570,7 +3570,7 @@ background-size: auto, cover;
 		}
 
 		#wrapper > header p {
-			font-family: Raleway, Helvetica, sans-serif;
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 1em;
 			font-weight: 200;
 			letter-spacing: 0.1em;
