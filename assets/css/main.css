@@ -1,38 +1,5 @@
-:root {
-  --bg-primary: #E8E4E4;
-  --bg-secondary: #F2F0EE;
-  --bg-tertiary: #d1cdcd;
-  --bg-quaternary: #fdfcfc;
-  --bg-highlight: #808000;
-  --bg-dark-1: #2d3a69;
-  --bg-dark-2: #324072;
-  --bg-dark-3: #353849;
-  --bg-dark-4: #39477c;
-  --bg-dark-5: #3d4051;
-  --bg-dark-6: #454858;
-  --bg-dark-7: #4d5060;
-  --bg-dark-8: #53639e;
-  --bg-dark-9: #555867;
-  --bg-transparent: transparent;
-  --bg-white-overlay: rgba(255, 255, 255, 0.025);
-  --bg-white-overlay-strong: rgba(255, 255, 255, 0.075);
-  --bg-blue-overlay: rgba(80, 90, 108, 0.95);
-  --bg-inherit: inherit;
-}
-:root {
-  --font-primary: 'Montserrat', Arial, sans-serif;
-  --font-size-default: 16.5pt;
-  --font-color: #000000;
-  --heading-color: #ff7424;
-  --body-bg-color: #E8E4E4;
-  --accent-color: #3498db;
-  --link-color: #000000;
-  --gradient-overlay: linear-gradient(to top, #e8e4e4, #e8e4e4);
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
+@import url("fontawesome-all.min.css");
 
 /*
 	Solid State by HTML5 UP
@@ -60,7 +27,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: var(--bg-inherit);
+	font: inherit;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -68,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-background-color: var(--bg-primary);
+background-color: #E8E4E4;
 background-image: none;
 background-size: auto;
 background-attachment: fixed;
@@ -86,8 +53,8 @@ body {
 }
 
 mark {
-	background-color: var(--bg-transparent);
-	color: var(--bg-inherit);
+	background-color: transparent;
+	color: inherit;
 }
 
 input::-moz-focus-inner {
@@ -130,15 +97,15 @@ input, select, textarea {
 	}
 
 	*, *:before, *:after {
-		box-sizing: var(--bg-inherit);
+		box-sizing: inherit;
 	}
 
 	body {
-background-color: var(--bg-primary);
+background-color: #E8E4E4;
 background-image: linear-gradient(
 	to top,
-	var(--bg-primary),
-	var(--bg-primary)
+	#e8e4e4,
+	#e8e4e4
 ), url("../../images/bg.png");
 background-size: auto, cover;
 		background-attachment: fixed,
@@ -161,9 +128,9 @@ background-size: auto, cover;
 /* Type */
 
 	body, input, select, textarea {
-		color: var(--font-color);
-		font-family: var(--font-primary);
-		font-size: var(--font-size-default);
+		color: #000000;
+		font-family: 'Montserrat', Arial, sans-serif;
+		font-size: 16.5pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -214,20 +181,20 @@ background-size: auto, cover;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-		color: var(--font-color);
+		color: #000000;
 		text-decoration: none;
 	}
 
 		a:hover {
-			border-bottom-color: var(--bg-transparent);
-			color: var(--font-color) !important;
+			border-bottom-color: transparent;
+			color: #000000 !important;
 		}
 
 		a.special:not(.button) {
 			text-decoration: none;
 			border-bottom: 0;
 			display: block;
-			font-family: var(--font-primary);
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 0.8em;
 			font-weight: 700;
 			letter-spacing: 0.1em;
@@ -268,15 +235,15 @@ background-size: auto, cover;
 			}
 
 			a.special:not(.button):hover:before {
-				background-color: var(--bg-white-overlay);
+				background-color: rgba(255, 255, 255, 0.025);
 			}
 
 			a.special:not(.button):active:before {
-				background-color: var(--bg-white-overlay-strong);
+				background-color: rgba(255, 255, 255, 0.075);
 			}
 
 	strong, b {
-		color: var(--font-color);
+		color: #000000;
 		font-weight: 600;
 	}
 
@@ -289,8 +256,8 @@ background-size: auto, cover;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: var(--heading-color);
-		font-family: var(--font-primary);
+		color: #ff7424;
+		font-family: 'Montserrat', Arial, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
@@ -298,7 +265,7 @@ background-size: auto, cover;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: var(--bg-inherit);
+			color: inherit;
 			text-decoration: none;
 			border-bottom: 0;
 		}
@@ -364,7 +331,7 @@ background-size: auto, cover;
 	}
 
 	code {
-		background: var(--bg-white-overlay);
+		background: rgba(255, 255, 255, 0.025);
 		border-radius: 5px;
 		border: solid 2px rgba(255, 255, 255, 0.125);
 		font-family: "Courier New", monospace;
@@ -2203,9 +2170,9 @@ background-size: auto, cover;
 		}
 
 	label {
-		color: var(--font-color);
+		color: #000000;
 		display: block;
-		font-family: var(--font-primary);
+		font-family: 'Montserrat', Arial, sans-serif;
 		font-size: 0.8em;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -2223,11 +2190,11 @@ background-size: auto, cover;
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: var(--bg-white-overlay);
+		background: rgba(255, 255, 255, 0.025);
 		border-radius: 5px;
 		border: none;
 		border: solid 2px rgba(255, 255, 255, 0.125);
-		color: var(--bg-inherit);
+		color: inherit;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -2250,7 +2217,7 @@ background-size: auto, cover;
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: var(--bg-highlight);
+			border-color: #808000;
 		}
 
 	select {
@@ -2265,11 +2232,11 @@ background-size: auto, cover;
 
 		select option {
 			color: #ffffff;
-			background: var(--bg-primary);
+			background: #e8e4e4;
 		}
 
 		select:focus::-ms-value {
-			background-color: var(--bg-transparent);
+			background-color: transparent;
 		}
 
 		select::-ms-expand {
@@ -2333,7 +2300,7 @@ background-size: auto, cover;
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: var(--bg-white-overlay);
+				background: rgba(255, 255, 255, 0.025);
 				border-radius: 5px;
 				border: solid 2px rgba(255, 255, 255, 0.125);
 				content: '';
@@ -2358,7 +2325,7 @@ background-size: auto, cover;
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: var(--bg-quaternary);
+			border-color: #fdfcfc;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2436,7 +2403,7 @@ background-size: auto, cover;
 		}
 
 		.icon:before {
-			line-height: var(--bg-inherit);
+			line-height: inherit;
 		}
 
 		.icon.solid:before {
@@ -2779,11 +2746,11 @@ background-size: auto, cover;
 			}
 
 				ul.pagination li > .page:hover {
-					background-color: var(--bg-white-overlay);
+					background-color: rgba(255, 255, 255, 0.025);
 				}
 
 				ul.pagination li > .page.active {
-					background-color: var(--bg-quaternary);
+					background-color: #fdfcfc;
 				}
 
 			ul.pagination li:first-child {
@@ -2837,7 +2804,7 @@ background-size: auto, cover;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: var(--bg-white-overlay);
+				background-color: rgba(255, 255, 255, 0.025);
 			}
 
 		table td {
@@ -2845,7 +2812,7 @@ background-size: auto, cover;
 		}
 
 		table th {
-			color: var(--heading-color);
+			color: #ff7424;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2901,14 +2868,14 @@ background-size: auto, cover;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: var(--bg-transparent);
+		background-color: transparent;
 		border-radius: 5px;
 		border: 0;
 		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-		color: var(--heading-color) !important;
+		color: #ff7424 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: var(--font-primary);
+		font-family: 'Montserrat', Arial, sans-serif;
 		font-size: 0.8em;
 		font-weight: 700;
 		height: 3.75em;
@@ -2926,7 +2893,7 @@ background-size: auto, cover;
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: var(--bg-white-overlay);
+			background-color: rgba(255, 255, 255, 0.025);
 		}
 
 		input[type="submit"]:active,
@@ -2934,7 +2901,7 @@ background-size: auto, cover;
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: var(--bg-white-overlay-strong);
+			background-color: rgba(255, 255, 255, 0.075);
 		}
 
 		input[type="submit"].icon:before,
@@ -2951,7 +2918,7 @@ background-size: auto, cover;
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: var(--bg-quaternary);
+			background-color: #fdfcfc;
 			box-shadow: none;
 		}
 
@@ -2960,7 +2927,7 @@ background-size: auto, cover;
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: var(--bg-dark-8);
+				background-color: #53639e;
 			}
 
 			input[type="submit"].primary:active,
@@ -2968,7 +2935,7 @@ background-size: auto, cover;
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: var(--bg-secondary);
+				background-color: #f2f0ee;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -3043,7 +3010,7 @@ background-size: auto, cover;
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: var(--bg-quaternary);
+			background-color: #fdfcfc;
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -3114,7 +3081,7 @@ background-size: auto, cover;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: var(--bg-blue-overlay);
+		background-color: rgba(80, 90, 108, 0.95);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3142,7 +3109,7 @@ background-size: auto, cover;
 			}
 
 		#header nav {
-			font-family: var(--font-primary);
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 0.8em;
 			font-weight: 700;
 			height: 3em;
@@ -3191,19 +3158,19 @@ background-size: auto, cover;
 
 					#header nav a[href="#menu"]:before {
 						content: '\f0c9';
-						line-height: var(--bg-inherit);
+						line-height: inherit;
 					}
 
 					#header nav a[href="#menu"]:hover {
-						background-color: var(--bg-white-overlay);
+						background-color: rgba(255, 255, 255, 0.025);
 					}
 
 					#header nav a[href="#menu"]:active {
-						background-color: var(--bg-white-overlay-strong);
+						background-color: rgba(255, 255, 255, 0.075);
 					}
 
 		#header.alt {
-			background-color: var(--bg-transparent);
+			background-color: transparent;
 		}
 
 			#header.alt h1 {
@@ -3221,13 +3188,13 @@ background-size: auto, cover;
 				#header nav {
 					top: 0;
 					right: 0;
-					height: var(--bg-inherit);
-					line-height: var(--bg-inherit);
+					height: inherit;
+					line-height: inherit;
 				}
 
 					#header nav a {
-						height: var(--bg-inherit);
-						line-height: var(--bg-inherit);
+						height: inherit;
+						line-height: inherit;
 					}
 
 						#header nav a[href="#menu"] {
@@ -3237,7 +3204,7 @@ background-size: auto, cover;
 						}
 
 							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
-								background-color: var(--bg-inherit);
+								background-color: inherit;
 							}
 
 		}
@@ -3252,7 +3219,7 @@ background-size: auto, cover;
 			}
 
 				#header nav a[href="#menu"]:before {
-					width: var(--bg-inherit);
+					width: inherit;
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -3319,7 +3286,7 @@ background-size: auto, cover;
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: var(--bg-quaternary);
+			background: #fdfcfc;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3365,7 +3332,7 @@ background-size: auto, cover;
 					border-radius: 5px;
 					border: 0;
 					display: block;
-					font-family: var(--font-primary);
+					font-family: 'Montserrat', Arial, sans-serif;
 					font-size: 0.8em;
 					font-weight: 200;
 					letter-spacing: 0.1em;
@@ -3375,7 +3342,7 @@ background-size: auto, cover;
 				}
 
 					#menu .links li a:hover {
-						background: var(--bg-secondary);
+						background: #f2f0ee;
 					}
 
 		@media screen and (max-width: 736px) {
@@ -3491,7 +3458,7 @@ background-size: auto, cover;
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			font-family: var(--font-primary);
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 1em;
 			font-weight: 200;
 			letter-spacing: 0.1em;
@@ -3505,7 +3472,7 @@ background-size: auto, cover;
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: var(--bg-highlight);
+				background-color: #808000;
 				background-image: linear-gradient(to top, rgba(232, 228, 228, 0.9), rgba(232, 228, 228, 0.9)), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
@@ -3605,7 +3572,7 @@ background-size: auto, cover;
 		}
 
 		#wrapper > header p {
-			font-family: var(--font-primary);
+			font-family: 'Montserrat', Arial, sans-serif;
 			font-size: 1em;
 			font-weight: 200;
 			letter-spacing: 0.1em;
@@ -3619,8 +3586,8 @@ background-size: auto, cover;
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: var(--bg-secondary);
-			background-image: linear-gradient(to top, var(--bg-primary), var(--bg-primary)d2), url("../../images/bg.jpg");
+			background-color: #F2F0EE;
+			background-image: linear-gradient(to top, #e8e4e4, #e8e4e4d2), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3667,7 +3634,7 @@ background-size: auto, cover;
 	}
 
 	.wrapper {
-		background-color: var(--bg-secondary);
+		background-color: #F2F0EE;
 		margin: 6.5em 0;
 		position: relative;
 	}
@@ -3677,11 +3644,11 @@ background-size: auto, cover;
 		}
 
 		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 var(--bg-secondary), 0 1px 0 0 var(--bg-secondary);
+			box-shadow: inset 0 -1px 0 0 #F2F0EE, 0 1px 0 0 #F2F0EE;
 		}
 
 		.wrapper:after {
-			box-shadow: inset 0 -1px 0 0 var(--bg-secondary), 0 1px 0 0 var(--bg-secondary);
+			box-shadow: inset 0 -1px 0 0 #F2F0EE, 0 1px 0 0 #F2F0EE;
 		}
 
 		.wrapper:before, .wrapper:after {
@@ -3729,7 +3696,7 @@ background-size: auto, cover;
 		}
 
 		.wrapper.style2 {
-			background-color: var(--bg-dark-3);
+			background-color: #353849;
 		}
 
 			.wrapper.style2:before, .wrapper.style2:after {
@@ -3737,15 +3704,15 @@ background-size: auto, cover;
 			}
 
 			.wrapper.style2:before {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-3), 0 1px 0 0 var(--bg-dark-3);
+				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
 			}
 
 			.wrapper.style2:after {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-3), 0 1px 0 0 var(--bg-dark-3);
+				box-shadow: inset 0 -1px 0 0 #353849, 0 1px 0 0 #353849;
 			}
 
 		.wrapper.style3 {
-			background-color: var(--bg-dark-5);
+			background-color: #3d4051;
 		}
 
 			.wrapper.style3:before, .wrapper.style3:after {
@@ -3753,15 +3720,15 @@ background-size: auto, cover;
 			}
 
 			.wrapper.style3:before {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-5), 0 1px 0 0 var(--bg-dark-5);
+				box-shadow: inset 0 -1px 0 0 #3d4051, 0 1px 0 0 #3d4051;
 			}
 
 			.wrapper.style3:after {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-5), 0 1px 0 0 var(--bg-dark-5);
+				box-shadow: inset 0 -1px 0 0 #3d4051, 0 1px 0 0 #3d4051;
 			}
 
 		.wrapper.style4 {
-			background-color: var(--bg-dark-6);
+			background-color: #454858;
 		}
 
 			.wrapper.style4:before, .wrapper.style4:after {
@@ -3769,15 +3736,15 @@ background-size: auto, cover;
 			}
 
 			.wrapper.style4:before {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-6), 0 1px 0 0 var(--bg-dark-6);
+				box-shadow: inset 0 -1px 0 0 #454858, 0 1px 0 0 #454858;
 			}
 
 			.wrapper.style4:after {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-6), 0 1px 0 0 var(--bg-dark-6);
+				box-shadow: inset 0 -1px 0 0 #454858, 0 1px 0 0 #454858;
 			}
 
 		.wrapper.style5 {
-			background-color: var(--bg-dark-7);
+			background-color: #4d5060;
 		}
 
 			.wrapper.style5:before, .wrapper.style5:after {
@@ -3785,15 +3752,15 @@ background-size: auto, cover;
 			}
 
 			.wrapper.style5:before {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-7), 0 1px 0 0 var(--bg-dark-7);
+				box-shadow: inset 0 -1px 0 0 #4d5060, 0 1px 0 0 #4d5060;
 			}
 
 			.wrapper.style5:after {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-7), 0 1px 0 0 var(--bg-dark-7);
+				box-shadow: inset 0 -1px 0 0 #4d5060, 0 1px 0 0 #4d5060;
 			}
 
 		.wrapper.style6 {
-			background-color: var(--bg-dark-9);
+			background-color: #555867;
 		}
 
 			.wrapper.style6:before, .wrapper.style6:after {
@@ -3801,15 +3768,15 @@ background-size: auto, cover;
 			}
 
 			.wrapper.style6:before {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-9), 0 1px 0 0 var(--bg-dark-9);
+				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
 			}
 
 			.wrapper.style6:after {
-				box-shadow: inset 0 -1px 0 0 var(--bg-dark-9), 0 1px 0 0 var(--bg-dark-9);
+				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
 			}
 
 		.wrapper.spotlight {
-			background-color: var(--bg-quaternary);
+			background-color: #fdfcfc;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
@@ -3817,11 +3784,11 @@ background-size: auto, cover;
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 var(--bg-quaternary), 0 1px 0 0 var(--bg-quaternary);
+				box-shadow: inset 0 -1px 0 0 #fdfcfc, 0 1px 0 0 #fdfcfc;
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 var(--bg-quaternary), 0 1px 0 0 var(--bg-quaternary);
+				box-shadow: inset 0 -1px 0 0 #fdfcfc, 0 1px 0 0 #fdfcfc;
 			}
 
 			.wrapper.spotlight .inner {
@@ -3870,7 +3837,7 @@ background-size: auto, cover;
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: var(--bg-secondary);
+				background-color: #f2f0ee;
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
@@ -3878,15 +3845,15 @@ background-size: auto, cover;
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 var(--bg-secondary), 0 1px 0 0 var(--bg-secondary);
+					box-shadow: inset 0 -1px 0 0 #f2f0ee, 0 1px 0 0 #f2f0ee;
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 var(--bg-secondary), 0 1px 0 0 var(--bg-secondary);
+					box-shadow: inset 0 -1px 0 0 #f2f0ee, 0 1px 0 0 #f2f0ee;
 				}
 
 			.wrapper.spotlight.style3 {
-				background-color: var(--bg-tertiary);
+				background-color: #d1cdcd;
 			}
 
 				.wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
@@ -3894,15 +3861,15 @@ background-size: auto, cover;
 				}
 
 				.wrapper.spotlight.style3:before {
-					box-shadow: inset 0 -1px 0 0 var(--bg-tertiary), 0 1px 0 0 var(--bg-tertiary);
+					box-shadow: inset 0 -1px 0 0 #d1cdcd, 0 1px 0 0 #d1cdcd;
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 var(--bg-tertiary), 0 1px 0 0 var(--bg-tertiary);
+					box-shadow: inset 0 -1px 0 0 #d1cdcd, 0 1px 0 0 #d1cdcd;
 				}
 
 			.wrapper.spotlight.style4 {
-				background-color: var(--bg-dark-4);
+				background-color: #39477c;
 			}
 
 				.wrapper.spotlight.style4:before, .wrapper.spotlight.style4:after {
@@ -3910,15 +3877,15 @@ background-size: auto, cover;
 				}
 
 				.wrapper.spotlight.style4:before {
-					box-shadow: inset 0 -1px 0 0 var(--bg-dark-4), 0 1px 0 0 var(--bg-dark-4);
+					box-shadow: inset 0 -1px 0 0 #39477c, 0 1px 0 0 #39477c;
 				}
 
 				.wrapper.spotlight.style4:after {
-					box-shadow: inset 0 -1px 0 0 var(--bg-dark-4), 0 1px 0 0 var(--bg-dark-4);
+					box-shadow: inset 0 -1px 0 0 #39477c, 0 1px 0 0 #39477c;
 				}
 
 			.wrapper.spotlight.style5 {
-				background-color: var(--bg-dark-2);
+				background-color: #324072;
 			}
 
 				.wrapper.spotlight.style5:before, .wrapper.spotlight.style5:after {
@@ -3926,15 +3893,15 @@ background-size: auto, cover;
 				}
 
 				.wrapper.spotlight.style5:before {
-					box-shadow: inset 0 -1px 0 0 var(--bg-dark-2), 0 1px 0 0 var(--bg-dark-2);
+					box-shadow: inset 0 -1px 0 0 #324072, 0 1px 0 0 #324072;
 				}
 
 				.wrapper.spotlight.style5:after {
-					box-shadow: inset 0 -1px 0 0 var(--bg-dark-2), 0 1px 0 0 var(--bg-dark-2);
+					box-shadow: inset 0 -1px 0 0 #324072, 0 1px 0 0 #324072;
 				}
 
 			.wrapper.spotlight.style6 {
-				background-color: var(--bg-dark-1);
+				background-color: #2d3a69;
 			}
 
 				.wrapper.spotlight.style6:before, .wrapper.spotlight.style6:after {
@@ -3942,11 +3909,11 @@ background-size: auto, cover;
 				}
 
 				.wrapper.spotlight.style6:before {
-					box-shadow: inset 0 -1px 0 0 var(--bg-dark-1), 0 1px 0 0 var(--bg-dark-1);
+					box-shadow: inset 0 -1px 0 0 #2d3a69, 0 1px 0 0 #2d3a69;
 				}
 
 				.wrapper.spotlight.style6:after {
-					box-shadow: inset 0 -1px 0 0 var(--bg-dark-1), 0 1px 0 0 var(--bg-dark-1);
+					box-shadow: inset 0 -1px 0 0 #2d3a69, 0 1px 0 0 #2d3a69;
 				}
 
 		@media screen and (max-width: 980px) {
@@ -4106,13 +4073,13 @@ background-size: auto, cover;
 				}
 
 				#footer .inner .copyright li a {
-					color: var(--bg-inherit);
+					color: inherit;
 				}
 
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: var(--bg-secondary);
+			background-color: #F2F0EE;
 			background-image: linear-gradient(to top, rgbargba(232, 228, 228, 0.8), rgba(232, 228, 228, 0.8)), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
