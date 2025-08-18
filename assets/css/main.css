@@ -4178,3 +4178,25 @@ background-size: auto, cover;
   border: 0 !important;              /* remove the underline */
   margin: 0 0 2em !important;        /* body-like gap */
 }
+
+
+
+/* === Make the hero ("Professional...") match the banner paragraph exactly === */
+#banner .inner > h2,
+#banner h2 {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 1em !important;      /* same as #banner p on desktop */
+  font-weight: 200 !important;     /* same as #banner p */
+  line-height: 2 !important;       /* same as #banner p */
+  letter-spacing: 0.1em !important;/* same as #banner p */
+  color: #000000 !important;       /* same as body/banner text */
+  text-transform: none !important; /* remove uppercase from heading styles */
+  border: 0 !important;            /* remove underline */
+  margin: 0 0 2em !important;      /* same bottom gap as <p> */
+}
+
+/* Keep it matched on small screens too (your CSS sets #banner p to 0.8em) */
+@media screen and (max-width: 736px) {
+  #banner .inner > h2,
+  #banner h2 { font-size: 0.8em !important; }
+}
