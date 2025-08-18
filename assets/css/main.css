@@ -3463,9 +3463,9 @@ background-size: auto, cover;
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			<!--
+			/*
 			text-transform: uppercase;
-			-->
+			*/
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3577,9 +3577,9 @@ background-size: auto, cover;
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			<!--
+			/*
 			text-transform: uppercase;
-			-->
+			*/
 		}
 
 	@media screen and (max-width: 1280px) {
@@ -4163,14 +4163,18 @@ background-size: auto, cover;
 		}
 
 	}
+
+
+
+
+/* === Make the hero ("Professional...") look like normal body text === */
+#banner .inner > h2,
 #banner h2 {
-  font-family: 'Montserrat', Arial, sans-serif !important; /* match body */
-  font-size: inherit !important;        /* follows body size across media queries */
-  line-height: 2 !important;            /* matches your paragraphs (banner & wrapper use 2) */
-  font-weight: 200 !important;          /* matches your paragraph weight */
-  color: #000000 !important;            /* match body text colour */
-  text-transform: none !important;      /* remove uppercase from heading styles */
-  letter-spacing: 0.1em !important;     /* same tracking as your paragraphs */
-  border: 0 !important;                 /* remove the underline from #banner h2 */
-  margin: 0 0 2em 0 !important;         /* same bottom margin as <p> */
+  font: inherit !important;          /* font-family, size, weight from body */
+  line-height: inherit !important;   /* same spacing as body */
+  color: inherit !important;         /* #000 like body */
+  text-transform: none !important;   /* remove UPPERCASE */
+  letter-spacing: normal !important; /* remove extra tracking */
+  border: 0 !important;              /* remove the underline */
+  margin: 0 0 2em !important;        /* body-like gap */
 }
