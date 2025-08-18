@@ -4163,4 +4163,14 @@ background-size: auto, cover;
 		}
 
 	}
-
+#banner h2 {
+  font-family: 'Montserrat', Arial, sans-serif !important; /* match body */
+  font-size: inherit !important;        /* follows body size across media queries */
+  line-height: 2 !important;            /* matches your paragraphs (banner & wrapper use 2) */
+  font-weight: 200 !important;          /* matches your paragraph weight */
+  color: #000000 !important;            /* match body text colour */
+  text-transform: none !important;      /* remove uppercase from heading styles */
+  letter-spacing: 0.1em !important;     /* same tracking as your paragraphs */
+  border: 0 !important;                 /* remove the underline from #banner h2 */
+  margin: 0 0 2em 0 !important;         /* same bottom margin as <p> */
+}
